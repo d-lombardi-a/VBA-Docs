@@ -34,12 +34,15 @@ Possible causes:
   - In a network environment, you do not have write privileges for the database file.
     
   - In Microsoft Visual Basic, you used the  **Data** control and set the **ReadOnly** property to **True**.
+  
+  - You tried to delete data from a table that is linked to another table's fields and the linked field(s) is not the primary key.
     
 
     
     
 
 To delete the data, close the database, resolve the read-only condition, and then reopen the file for read/write access.
+If You are deleting from a table linked to another table make sure that linked field(s) is the primary key.
 
 ## See also
 
